@@ -25,7 +25,7 @@ namespace FindAndReplace.Models
   }
   public string GetReplaceString()
   {
-    return "gggggg";
+    return _replaceString;
   }
   }
 }
