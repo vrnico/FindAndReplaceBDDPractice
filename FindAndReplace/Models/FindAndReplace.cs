@@ -19,7 +19,7 @@ namespace FindAndReplace.Models
   }
   public string GetFindString()
   {
-    return "wwjhlj";
+    return _findString;
   }
   }
 }
