@@ -10,10 +10,23 @@ namespace FindAndReplace.Tests
     public void GetInputString_GetsString_ReturnsString()
     {
       //arrange
-      FindAndReplaceGenerator newFindAndReplaceGenerator = new FindAndReplaceGenerator("");
-      string testString = "";
+      FindAndReplaceGenerator newFindAndReplaceGenerator = new FindAndReplaceGenerator("I am a cat", "cat");
+      string testString = "I am a cat";
       //act
       string testInput = newFindAndReplaceGenerator.GetInputString();
+      //assert
+      Assert.AreEqual(testString, testInput);
+    }
+    [TestMethod]
+    public void GetFindString_GetsString_ReturnsString()
+    {
+      //arrange
+      FindAndReplaceGenerator newFindAndReplaceGenerator =
+      new FindAndReplaceGenerator("i am a cat", "cat");
+      string testString = "cat";
+      //act
+      string testInput = newFindAndReplaceGenerator.GetFindString();
+
       //assert
       Assert.AreEqual(testString, testInput);
     }
