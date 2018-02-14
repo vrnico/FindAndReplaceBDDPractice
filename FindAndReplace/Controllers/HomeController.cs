@@ -9,7 +9,7 @@ namespace FindAndReplace.Controllers
     public ActionResult Index()
     {
       string fakeString = "";
-      return View("Index");
+      return View("Index", fakeString);
     }
     [HttpPost("/result")]
     public ActionResult Result()
