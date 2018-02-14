@@ -6,11 +6,13 @@ namespace FindAndReplace.Models
   {
   private string _inputString;
   private string _findString;
+  private string _replaceString;
 
-  public FindAndReplaceGenerator(string inputString, string findString)
+  public FindAndReplaceGenerator(string inputString, string findString, string replaceString)
   {
     _inputString = inputString;
     _findString = findString;
+    _replaceString = replaceString;
   }
 
   public string GetInputString()
@@ -20,6 +22,10 @@ namespace FindAndReplace.Models
   public string GetFindString()
   {
     return _findString;
+  }
+  public string GetReplaceString()
+  {
+    return "gggggg";
   }
   }
 }
