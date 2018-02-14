@@ -1,5 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using FindAndReplace.Models;
+
 
 namespace FindAndReplace.Tests
 {
@@ -40,6 +42,17 @@ namespace FindAndReplace.Tests
       string testString = "butt";
       //act
       string testInput = newFindAndReplaceGenerator.GetReplaceString();
+      //assert
+      Assert.AreEqual(testString, testInput);
+    }
+    [TestMethod]
+    public void ReturnString_GetsReturnString_ReturnsString()
+    {
+      //arrange
+      FindAndReplaceGenerator newFindAndReplaceGenerator = new FindAndReplaceGenerator("i am a cat", "cat", "butt");
+      string testString = "i am a butt";
+      //act
+      string testInput = newFindAndReplaceGenerator.ReturnString();
       //assert
       Assert.AreEqual(testString, testInput);
     }

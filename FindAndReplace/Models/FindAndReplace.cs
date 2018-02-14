@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace FindAndReplace.Models
 {
@@ -26,6 +27,13 @@ namespace FindAndReplace.Models
   public string GetReplaceString()
   {
     return _replaceString;
+  }
+  public string ReturnString()
+  {
+    //find _findString in _inputString and replace with _replaceString, return new string.
+    string returnString = _inputString.Replace(_findString, _replaceString);
+
+    return "boogers";
   }
   }
 }
