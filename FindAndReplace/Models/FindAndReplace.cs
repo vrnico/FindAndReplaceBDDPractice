@@ -13,7 +13,7 @@ namespace FindAndReplace.Models
 
   public string GetInputString()
   {
-    return "woohoo";
+    return _inputString;
   }
   }
 }
