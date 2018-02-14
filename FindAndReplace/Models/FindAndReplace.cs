@@ -33,7 +33,7 @@ namespace FindAndReplace.Models
     //find _findString in _inputString and replace with _replaceString, return new string.
     string returnString = _inputString.Replace(_findString, _replaceString);
 
-    return "boogers";
+    return returnString;
   }
   }
 }
