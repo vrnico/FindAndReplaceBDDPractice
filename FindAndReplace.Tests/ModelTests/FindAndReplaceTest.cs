@@ -49,8 +49,8 @@ namespace FindAndReplace.Tests
     public void ReturnString_GetsReturnString_ReturnsString()
     {
       //arrange
-      FindAndReplaceGenerator newFindAndReplaceGenerator = new FindAndReplaceGenerator("i am a cat", "cat", "butt");
-      string testString = "i am a butt";
+      FindAndReplaceGenerator newFindAndReplaceGenerator = new FindAndReplaceGenerator("i am a Cat", "cat", "butt");
+      string testString = "i am a Butt";
       //act
       string testInput = newFindAndReplaceGenerator.ReturnString();
       //assert
