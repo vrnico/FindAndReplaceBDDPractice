@@ -10,18 +10,24 @@
     <div class="container">
       <h1>HOLY CRAP</h1>
       <h2>find and replace</h2>
-
-      <form method="post" action="/result">
+      <div class-"row">
+        <div class="col-md-6">
+          <form method="post" action="/result">
+            <div class="form-group">
+              <textarea name="input-string" rows="10" cols="50" placeholder="put some text to find/replace in here!!!!!!!!!!"></textarea>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <img src="https://media.giphy.com/media/10uqQYw7lmEcPS/200.gif">
+        </div>
+      </div>
+      <br>
+      <br>
         <div class="form-group">
-          <textarea name="input-string" rows="10" cols="50" placeholder="put some text to find/replace in here!!!!!!!!!!"></textarea>
+          <input type="text" name="find-string" class="form-control" placeholder="FIND WORD GOES HERE">
         </div>
         <div class="form-group">
-          <label for="find-string">Enter a word to find</label>
-          <input type="text" name="find-string" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="replace-string">Enter a word to replace it</label>
-          <input type="text" name="replace-string" class="form-control">
+          <input type="text" name="replace-string" class="form-control" placeholder="REPLACE WORD GOES HERE">
         </div>
         <button type="submit" class="btn btn-default">SUBMIT</button>
       </form>
